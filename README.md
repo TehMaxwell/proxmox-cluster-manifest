@@ -100,6 +100,10 @@ More information on Kustomize can be found here:
 
 https://kubectl.docs.kubernetes.io/references/kustomize/
 
+In addition, a helpful contact at VM Ware has created a sample Kustomization repository that demonstrates its use well:
+
+https://github.com/markusrt/kustomize-sample
+
 ## Kubernetes Metrics Server
 
 The Kubernetes Metrics Server is a set of services provided by the Kubernetes SIG that provide basic metrics about Pods for the purposes of Horizontal Pod Autoscaling. Further inforamtion about the Metrics Server and its deployment can be found here:

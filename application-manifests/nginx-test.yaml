@@ -9,6 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: applications/nginx-test/base
+    path: applications/nginx-test/overlays/dev
     repoURL: https://github.com/TehMaxwell/proxmox-cluster-manifest.git
     targetRevision: HEAD

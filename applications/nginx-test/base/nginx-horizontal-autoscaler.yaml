@@ -16,14 +16,4 @@ spec:
         target:
           type: Utilization
           averageUtilization: 10
-status:
-  observedGeneration: 1
-  currentReplicas: 1
-  desiredReplicas: 1
-  currentMetrics:
-  - type: Resource
-    resource:
-      name: cpu
-    current:
-      averageUtilization: 0
-      averageValue: 0
+          

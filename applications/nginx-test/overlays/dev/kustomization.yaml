@@ -1,0 +1,6 @@
+metadata:
+  name: nginx-test-dev
+resources:
+- ../../base/
+patches:
+- path: nginx-horizontal-autoscaler-patch.yaml
