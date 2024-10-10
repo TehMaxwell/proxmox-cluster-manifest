@@ -76,4 +76,20 @@ https://argo-cd.readthedocs.io/en/stable/operator-manual/ingress/#argocd-server-
 
 #### Configuring Argo CD
 
+Once we have installed Argo CD and configured into run behind the Load Balancer and Ingress Controller, we can start to deploy things using it. There are a few base configurations we must perform to make this easier. These configurations are outlined in the following sections.
+
+*App of Apps Configuration:*
+
+The most common way of managing an Argo CD installation is by connecting it to a git repository that holds all of the Kubernetes manifests you want to deploy. To make these easier to manage and allow folder structures in the git repository, an "App of Apps" configuration is used as an initial (manual) deployment to Argo CD. This means all Application deployments can be managed in the git repository, and only one application needs to be manually applied on the cluster.
+
+More information on App of Apps can be found here:
+
+https://argo-cd.readthedocs.io/en/stable/operator-manual/cluster-bootstrapping/
+
+To create the initial App of Apps installation, apply the **app-of-apps-configuration.yaml** file from the **argocd** folder against the cluster.
+
+```bash
+kubectl apply -f app-of-apps-configuration.yaml
+```
+
 

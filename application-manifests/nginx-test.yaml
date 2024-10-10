@@ -1,16 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: applications
+  name: nginx-test
   namespace: argocd
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: argocd
+    namespace: nginx-test
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: /application-manifests
+    path: /applications/nginx-test/base
     repoURL: https://github.com/TehMaxwell/proxmox-cluster-manifest.git
     targetRevision: HEAD

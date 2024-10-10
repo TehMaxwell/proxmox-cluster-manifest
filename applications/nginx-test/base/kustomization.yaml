@@ -1,0 +1,6 @@
+metadata:
+  name: nginx-test
+resources:
+- nginx-deployment.yaml
+- nginx-horizontal-autoscaler.yaml
+- nginx-service.yaml
