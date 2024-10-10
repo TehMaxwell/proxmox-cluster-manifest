@@ -115,3 +115,19 @@ The metrics server is a requirement for using HPAs and fully leveraging the decl
 *Deployment Manifests when using HPAs:*
 
 When using a HPA, do not define the required number of replicas in the deployment file! The HPAs **minReplicas** and **maxReplicas** manifest parameters will control this for you.
+
+## Strimzi
+
+Strimzi is an operator and controller that manages the deployment of Kafka within a Kubernetes cluster. It also adds a set of Custom Resource Definitions for Kubernetes that allow Topics and Kafka Clusters to be configured declaritively.
+
+Strimzi can be deployed using a Helm chart (and is configured to do so via Argo CD in this repository), example values for the helm chart can be found here:
+
+https://github.com/strimzi/strimzi-kafka-operator/blob/main/helm-charts/helm3/strimzi-kafka-operator/values.yaml
+
+More information on deploying Strimzi with Helm can be found here:
+
+https://strimzi.io/docs/operators/latest/deploying#deploying-cluster-operator-helm-chart-str
+
+Additionally, the top level Strimzi docs can be found here:
+
+https://strimzi.io/documentation/

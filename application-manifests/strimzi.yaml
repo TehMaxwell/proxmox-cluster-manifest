@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: strimzi
+  namespace: argocd
+spec:
+  project: default
+  source:
+    chart: strimzi-kafka-operator
+    repoURL: quay.io/strimzi-helm    # oci:// is not required and should not be left in place for the helm repository url
+    targetRevision: 0.43.0
+    helm:
+      releaseName: strimzi
+      valuesObject:
+        watchAnyNamespace: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: strimzi
