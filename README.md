@@ -70,4 +70,10 @@ To run Argo CD behind the nginx ingress controller, run the **argocd-ingress.yam
 
 https://stackoverflow.com/questions/76624577/argocd-ingress-kubernetes-too-many-redirects-even-with-insecure-nginx
 
+Additionally, if you want to run Argo CD behind a non-root ingress path, then you need to reconfigure the Argo CD ingress and argocd-server deployment to run behind the non root path. The files in the repository are currently configured to run Argo CD behind the path "/argocd". More information on requirements to do this can be found here (baring in mind that nginx is configured through the annotations in the ingress configuration):
+
+https://argo-cd.readthedocs.io/en/stable/operator-manual/ingress/#argocd-server-and-ui-root-path-v153
+
+#### Configuring Argo CD
+
 
