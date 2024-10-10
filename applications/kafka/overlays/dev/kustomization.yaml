@@ -1,0 +1,6 @@
+metadata:
+  name: kafka
+resources:
+- ../../base
+patches:
+- path: kafka-cluster-patch.yaml

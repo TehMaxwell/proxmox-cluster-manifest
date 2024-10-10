@@ -1,0 +1,4 @@
+metadata:
+  name: kafka
+resources:
+- kafka-cluster.yaml
