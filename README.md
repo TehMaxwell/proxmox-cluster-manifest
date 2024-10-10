@@ -92,4 +92,22 @@ To create the initial App of Apps installation, apply the **app-of-apps-configur
 kubectl apply -f app-of-apps-configuration.yaml
 ```
 
+## Kustomize
+
+Kustomize is a tool natively built into Kubernetes and kubectl that allows configuration of kubernetes manifests programatically. It does this through a series of "overlays" that dynamically reconfigure values for a particular deployment. This is particularly useful when deploying to different environments (DEV, STAGING, PRODUCTION).
+
+More information on Kustomize can be found here:
+
+https://kubectl.docs.kubernetes.io/references/kustomize/
+
+## Kubernetes Metrics Server
+
+The Kubernetes Metrics Server is a set of services provided by the Kubernetes SIG that provide basic metrics about Pods for the purposes of Horizontal Pod Autoscaling. Further inforamtion about the Metrics Server and its deployment can be found here:
+
+https://github.com/kubernetes-sigs/metrics-server
+
+The metrics server is a requirement for using HPAs and fully leveraging the declaritive power of Kubernetes.
+
+*Deployment Manifests when using HPAs:*
+
 
