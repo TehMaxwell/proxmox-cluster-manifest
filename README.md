@@ -110,4 +110,4 @@ The metrics server is a requirement for using HPAs and fully leveraging the decl
 
 *Deployment Manifests when using HPAs:*
 
-
+When using a HPA, do not define the required number of replicas in the deployment file! The HPAs **minReplicas** and **maxReplicas** manifest parameters will control this for you.
