@@ -18,7 +18,7 @@ spec:
         image: provectuslabs/kafka-ui:latest
         ports:
         - containerPort: 8080
-        environment:
+        env:
         - name: SERVER_SERVLET_CONTEXT_PATH
           value: "/kafka-ui"
         resources:
