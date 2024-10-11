@@ -24,6 +24,7 @@ spec:
       inter.broker.protocol.version: "3.8"
     storage:
       type: jbod
+      class: standard-storage
       volumes:
       - id: 0
         type: persistent-claim
@@ -33,6 +34,7 @@ spec:
     replicas: 3
     storage:
       type: persistent-claim
+      class: standard-storage
       size: 20Gi
       deleteClaim: false
   entityOperator:
