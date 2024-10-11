@@ -131,3 +131,16 @@ https://strimzi.io/docs/operators/latest/deploying#deploying-cluster-operator-he
 Additionally, the top level Strimzi docs can be found here:
 
 https://strimzi.io/documentation/
+
+#### UI for Apache Kafka
+
+The UI for Apache Kafka application provided by Provectus gives a very nice method of visualising Kafka Clusters, Brokers, Topics and Messages.
+More information about the application can be found here:
+
+https://docs.kafka-ui.provectus.io/
+
+More information about configuration of the application can be found here:
+
+https://docs.kafka-ui.provectus.io/configuration/configuration-wizard
+
+Additionally, in this repository an application manifest for Argo CD has been created to deploy this UI on the cluster.

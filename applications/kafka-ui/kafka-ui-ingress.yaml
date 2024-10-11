@@ -3,8 +3,6 @@ kind: Ingress
 metadata:
   name: kafka-ui-ingress
   namespace: kafka-ui
-  annotations:
-    # nginx.ingress.kubernetes.io/rewrite: /kafka-ui/(.*)
 spec:
   ingressClassName: nginx
   rules:
