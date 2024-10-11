@@ -23,8 +23,7 @@ spec:
       min.insync.replicas: 2
       inter.broker.protocol.version: "3.8"
     storage:
-      type: jbod
-      class: standard-storage
+      type: ephemeral
       volumes:
       - id: 0
         type: persistent-claim
@@ -33,8 +32,7 @@ spec:
   zookeeper:
     replicas: 3
     storage:
-      type: persistent-claim
-      class: standard-storage
+      type: ephemeral
       size: 20Gi
       deleteClaim: false
   entityOperator:
