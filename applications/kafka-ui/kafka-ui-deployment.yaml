@@ -21,6 +21,8 @@ spec:
         env:
         - name: SERVER_SERVLET_CONTEXT_PATH
           value: "/kafka-ui"
+        - name: DYNAMIC_CONFIG_ENABLED
+          value: "true"
         resources:
           requests:
             cpu: "100m"
