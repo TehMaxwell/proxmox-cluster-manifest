@@ -1,5 +1,5 @@
 metadata:
-  name: kafka
+  name: kafka-dev
 resources:
 - ../../base
 patches:
