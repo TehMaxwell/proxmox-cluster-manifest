@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: kafka-ui-ingress
   namespace: kafka-ui
-  annotations:
+  # annotations:
     # nginx.ingress.kubernetes.io/rewrite: /kafka-ui/(.*)
     # nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     # nginx.ingress.kubernetes.io/ssl-passthrough: "true"
@@ -12,7 +12,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /kafka-ui
+      - path: /
         pathType: Prefix
         backend:
           service:
