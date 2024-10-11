@@ -3,7 +3,7 @@ kind: KafkaTopic
 metadata:
   name: test-topic
   labels:
-    strimzi.io/cluster: strimzi
+    strimzi.io/cluster: kafka-cluster   # Name of the Kafka Cluster the topic belongs to
 spec:
   partitions: 1
   replicas: 1
