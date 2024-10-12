@@ -22,10 +22,10 @@ spec:
         resources:
           requests:
             cpu: "100m"
-            memory: "128MiB"
+            memory: "128Mi"
           limits:
             cpu: "200m"
-            memory: "256MiB"
+            memory: "256Mi"
         env:
           - name: "Topics__ConsumerTopic"
             value: "test-topic-2"
