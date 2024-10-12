@@ -39,4 +39,4 @@ spec:
     topicOperator:
       watchedNamespace: kafka-consumer-test
     userOperator: {}
-  cruiseControler: {}
+  cruiseControl: {}
