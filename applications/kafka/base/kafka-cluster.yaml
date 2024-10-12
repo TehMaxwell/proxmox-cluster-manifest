@@ -36,5 +36,6 @@ spec:
       size: 20Gi
       deleteClaim: false
   entityOperator:
-    topicOperator: {}
+    topicOperator:
+      watchedNamespace: kafka-consumer-test
     userOperator: {}
