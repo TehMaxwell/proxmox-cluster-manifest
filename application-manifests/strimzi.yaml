@@ -13,6 +13,7 @@ spec:
       releaseName: strimzi
       valuesObject:
         watchAnyNamespace: true
+        watchNamespaces: []
   destination:
     server: https://kubernetes.default.svc
     namespace: strimzi
