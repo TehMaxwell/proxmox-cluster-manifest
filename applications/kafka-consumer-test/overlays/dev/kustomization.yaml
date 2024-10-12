@@ -1,0 +1,4 @@
+metadata:
+  name: kafka-consumer-test
+resources:
+- ../../base

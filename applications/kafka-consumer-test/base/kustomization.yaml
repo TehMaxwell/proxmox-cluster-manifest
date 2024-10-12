@@ -1,0 +1,9 @@
+metadata:
+  name: kafka-consumer-test
+resources:
+- kafka-consumer-one-deployment.yaml
+- kafka-consumer-one-service.yaml
+- kafka-consumer-two-deployment.yaml
+- kafka-consumer-two-service.yaml
+- kafka-test-topic-one.yaml
+- kafka-test-topic-two.yaml

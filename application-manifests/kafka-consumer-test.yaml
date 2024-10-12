@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kafka-consumer-test
+  namespace: argocd
+spec:
+  destination:
+    namespace: kafka-consumer-test
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: applications/kafka-consumer-test/overlays/dev
+    repoURL: https://github.com/TehMaxwell/proxmox-cluster-manifest.git
+    targetRevision: HEAD

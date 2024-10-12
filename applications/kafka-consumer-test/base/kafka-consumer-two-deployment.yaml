@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-consumer-two
+  labels:
+    app: kafka-consumer-two
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kafka-consumer-two
+  template:
+    metadata:
+      labels:
+        app: kafka-consumer-two
+    spec:
+      containers:
+      - name: kafka-consumer
+        image: ghcr.io/tehmaxwell/mtt-backend-user-registration:main
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128MiB"
+          limits:
+            cpu: "200m"
+            memory: "256MiB"
+        env:
+          - name: "Topics__ConsumerTopic"
+            value: "test-topic-1"
+          - name: "Topics__ProducerTopic"
+            value: "test-topic-2"
+          - name: "ProducerConfiguration__BootstrapServers"
+            value: "kafka-cluster-kafka-bootstrap.kafka:9092"
+          - name: "ConsumerConfiguration__BootstrapServers"
+            value: "kafka-cluster-kafka-bootstrap.kafka:9092"
+          - name: "ConsumerConfiguration__GroupId"
+            value: "consumer-group-2"
+          - name: "ConsumerConfiguration__AutoOffsetReset"
+            value: "Earliest"
+          - name: "ConsumerConfiguration__EnableAutoCommit"
+            value: "true"
