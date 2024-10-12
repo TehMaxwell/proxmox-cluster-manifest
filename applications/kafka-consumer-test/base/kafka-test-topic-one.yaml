@@ -5,7 +5,7 @@ metadata:
   labels:
     strimzi.io/cluster: kafka-cluster   # Name of the Kafka Cluster the topic belongs to
 spec:
-  partitions: 1
+  partitions: 3
   replicas: 1
   config:
     retention.ms: 7200000
