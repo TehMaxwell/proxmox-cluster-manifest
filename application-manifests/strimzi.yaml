@@ -12,8 +12,8 @@ spec:
     helm:
       releaseName: strimzi
       valuesObject:
-        watchAnyNamespace: true
-        watchNamespaces: []
+        watchAnyNamespace: false
+        watchNamespaces: ["kafka-consumer-test"]
   destination:
     server: https://kubernetes.default.svc
     namespace: strimzi
