@@ -132,6 +132,17 @@ Additionally, the top level Strimzi docs can be found here:
 
 https://strimzi.io/documentation/
 
+#### Kafka Topic
+
+The KafkaTopic resource can be configured in a Kubernetes manifest YAML to create Kafka topics declaritively in the cluster.
+When doing this, bare in mind the following configuration options:
+
+```yaml
+metadata:
+    labels:
+        strimzi.io/cluster:     # The name of the KAFKA cluster the topic belongs to
+```
+
 #### UI for Apache Kafka
 
 The UI for Apache Kafka application provided by Provectus gives a very nice method of visualising Kafka Clusters, Brokers, Topics and Messages.
