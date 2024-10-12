@@ -106,7 +106,7 @@ https://github.com/markusrt/kustomize-sample
 
 ## Kubernetes Metrics Server
 
-The Kubernetes Metrics Server is a set of services provided by the Kubernetes SIG that provide basic metrics about Pods for the purposes of Horizontal Pod Autoscaling. Further inforamtion about the Metrics Server and its deployment can be found here:
+The Kubernetes Metrics Server is a set of services provided by the Kubernetes SIG that provide basic metrics about Pods for the purposes of Horizontal Pod Autoscaling. Further information about the Metrics Server and its deployment can be found here:
 
 https://github.com/kubernetes-sigs/metrics-server
 
