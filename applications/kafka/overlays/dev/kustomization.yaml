@@ -2,6 +2,5 @@ metadata:
   name: kafka-dev
 resources:
 - ../../base
-- kafka-test-topic.yaml
 patches:
 - path: kafka-cluster-patch.yaml
