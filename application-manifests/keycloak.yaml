@@ -21,6 +21,7 @@ spec:
           hostNameStrict: true
         postgresql:
           auth:
+            postgresPassword: Password123!
             password: Password123!
   destination:
     server: https://kubernetes.default.svc
