@@ -18,6 +18,7 @@ spec:
           enabled: true
           ingressClassName: nginx
           path: /keycloak
+          hostName: localhost
           hostNameStrict: true
         postgresql:
           auth:
