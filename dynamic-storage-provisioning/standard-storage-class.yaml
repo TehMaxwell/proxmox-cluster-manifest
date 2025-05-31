@@ -1,7 +1,8 @@
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: standard-storage
-provisioner: kubernetes.io/gce-pd
-parameters:
-  type: pd-standard
+  name: local-storage
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "true"  # Optional
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
