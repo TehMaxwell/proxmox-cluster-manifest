@@ -19,6 +19,9 @@ spec:
           ingressClassName: nginx
           path: /keycloak
           hostNameStrict: true
+        postgresql:
+          auth:
+            password: Password123!
   destination:
     server: https://kubernetes.default.svc
     namespace: keycloak
