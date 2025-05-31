@@ -14,12 +14,6 @@ spec:
       valuesObject:
         replicaCount: 1
         revisionHistoryLimitCount: 3
-        ingress:
-          enabled: true
-          ingressClassName: nginx
-          path: /keycloak
-          hostName: localhost
-          hostNameStrict: true
         postgresql:
           auth:
             postgresPassword: Password123!
