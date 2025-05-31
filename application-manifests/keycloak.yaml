@@ -14,6 +14,9 @@ spec:
       valuesObject:
         replicaCount: 1
         revisionHistoryLimitCount: 3
+        auth:
+          adminUser: admin
+          adminPassword: Password123!
         postgresql:
           auth:
             postgresPassword: Password123!
