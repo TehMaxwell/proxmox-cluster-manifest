@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: keycloak
+  namespace: argocd
+spec:
+  project: default
+  source:
+    chart: keycloak
+    repoURL: registry-1.docker.io/bitnamicharts    # oci:// is not required and should not be left in place for the helm repository url
+    targetRevision: 24.7.3
+    helm:
+      releaseName: keycloak
+      valuesObject:
+        replicaCount: 1
+        revisionHistoryLimitCount: 3
+        ingress:
+          enabled: true
+          ingressClassName: nginx
+          path: /keycloak
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: keycloak
